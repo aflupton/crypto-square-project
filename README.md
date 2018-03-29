@@ -6,7 +6,7 @@
 
 ## Description
 
-_Form takes user input and then places it in a table, which when read produces an encrypted message._
+_Form takes user input and then places it in a matrix, which when read by the algorithm produces an encrypted message._
 
 _Specs:_
 * _The program should split inputted words into separate strings of lowercase letters._
