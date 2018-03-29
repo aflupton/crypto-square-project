@@ -5,8 +5,29 @@ body{
 .jumbotron{
   background-color: #85dbc5;
   text-align: center;
+  width: 100%;
 }
 
 p{
-  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+h2 {
+  color: white;
+}
+
+#result {
+  display: none;
+  color: white;
+  font-style: italic;
+}
+#encrypt {  
+  font-size: 20pt;
+}
+#output {
+  font-style: italic;
+}
+
+button {
+  margin-top: 20px;
 }
