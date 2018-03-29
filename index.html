@@ -9,117 +9,22 @@
 </head>
 <body>
   <div class="jumbotron jumbotron-flex">
-    <h1>Cryptosquare</h1>
+    <h1 id="head" class="display-3">Crypto Square</h1>
   </div>
   <div class="container">
-    <h2>WELCOME!</h2>
-    <p>This is a interesting code:</p>
+    <h2 class="display-5">WELCOME!</h2>
+    <p>Enter an interesting sentence to encode:</p>
+    <!-- Input -->
     <form id="encrypt">
       <div class="form-group">
-        <label for="encrypt"></label>
         <input class="form-control" id="encrypt" type="text" name="encrypt" placeholder="Enter text to encrypt">
         <button class="btn btn-info" type="submit" name="button">Encrypt</button>
       </div>
     </form>
-    <div class="grid-container">
-  <div class="grid-item"><span class="firstLetter"></span></div>
-  <div class="grid-item"><span class="secondLetter"></span></div>
-  <div class="grid-item"><span class="thirdLetter"></span></div>
-  <div class="grid-item"><span class="forthLetter"></span></div>
-  <div class="grid-item"><span class="fifthLetter"></span></div>
-  <div class="grid-item"><span class="sixthLetter"></span></div>
-  <div class="grid-item"><span class="seventhLetter"></span></div>
-  <div class="grid-item"><span class="eighthLetter"></span></div>
-  <div class="grid-item"><span class="ninthLetter"></span></div>
-</div>
-
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col col-sm-4"></div>
-        <p>HI</p>
-        <div class="col col-sm-4"></div>
-        <p>HI</p>
-        <div class="col col-sm-4"></div>
-        <p>HI</p>
-        <div class="col col-sm-4"></div>
-        <p>HI</p>
-        <div class="col col-sm-4"></div>
-        <p>HI</p>
-        <div class="col col-sm-4"></div>
-        <p>HI</p>
-        <div class="col col-sm-4"></div>
-        <p>HI</p>
-      </div>
-      <div class="row">
-        <div class="col col-sm-4"></div>
-        <p>Bye</p>
-        <div class="col col-sm-4"></div>
-        <p>Bye</p>
-        <div class="col col-sm-4"></div>
-        <p>Bye</p>
-        <div class="col col-sm-4"></div>
-        <p>Bye</p>
-        <div class="col col-sm-4"></div>
-        <p>Bye</p>
-        <div class="col col-sm-4"></div>
-        <p>Bye</p>
-        <div class="col col-sm-4"></div>
-        <p>Bye</p>
-      </div>
-      <div class="row">
-        <div class="col col-sm-4"></div>
-        <p>what</p>
-        <div class="col col-sm-4"></div>
-        <p>what</p>
-        <div class="col col-sm-4"></div>
-        <p>what</p>
-        <div class="col col-sm-4"></div>
-        <p>what</p>
-        <div class="col col-sm-4"></div>
-        <p>what</p>
-        <div class="col col-sm-4"></div>
-        <p>what</p>
-        <div class="col col-sm-4"></div>
-        <p>what</p>
-      </div>
-    </div> -->
-    <!-- <div class="table container">
-      <div class="panel-body-top col-sm-2">
-        <div class="panel-header-bottom">
-          <p>hi</p>
-        </div>
-      </div>
-      <div class="panel-body-top col-sm-2">
-        <div class="panel-header-bottom">
-          <p>hi</p>
-        </div>
-      </div>
-      <div class="panel-body-top col-sm-2">
-        <div class="panel-header-bottom">
-          <p>hi</p>
-        </div>
-      </div>
-      <div class="panel-body-top col-sm-2">
-        <div class="panel-header-bottom">
-          <p>hi</p>
-        </div>
-      </div>
-      <div class="panel-body-top col-sm-2">
-        <div class="panel-header-bottom">
-          <p>hi</p>
-        </div>
-      </div>
-      <div class="panel-body-top col-sm-2">
-        <div class="panel-header-bottom"> -->
-          <!-- <p>hi</p>
-        </div>
-      </div>
+    <!-- Output -->
+    <div id="result" class="display-3">
+      <p><span id="output"></span>
     </div>
-  </div> -->
-      <div id="result" class="display-3">
-        <p><span id="output"></span>
-      </div>
-
     </div>
   </body>
 </html>

@@ -1,66 +1,44 @@
-// Business logic
-
-  // if(!+num)
-  //   alert("Please enter a sentence or string of letters.")
-
-var cypher = "";
-var columns = [];
-var tempCypher = [];
-
-var finalStr = "";
-
-
-// };  console.log(columns);
-//
-// var array = [[], [], [], [], []];
-//
-// for (var i in a)
-// {
-//    console.log("row " + i);
-//    for (var j in a[i])
-//      {
-//       console.log(" " + a[i][j]);
-//      }
-var even = false
-// remove spaces from string
+//back-end logic
+var cryptofunction = function (cypher){
   cypher = cypher.replace(/\s/g, "");
-// split string into array
-  tempCypher = cypher.split("");
-
-// var tempCypher = cypher.split("");
-console.log(cypher.length);
-//determine size of grid
-var rows = function(cypher) {
-  var squareRoot = (Math.sqrt(cypher.length);
-  if (squareRoot % 1 ==0) {
-    even = true
-  } else {
-    return (Math.floor(Math.sqrt(cypher.length)));
+  var columns = columnsfunction(cypher.length);
+  var result = "";
+  var counter = 0;
+  for (var i = 0; i < columns; i ++){
+    for (var j = i; j < cypher.length; j += columns){
+      if ((counter % 5) === 0){
+        result = result.concat(" ");
+      }
+      result = result.concat(cypher[j]);
+      counter ++;
+    }
   }
+  return result;
+}
+//sub-function that determines cryptosquare grid sizing
+var columnsfunction = function(length){
+    var n = 1;
+    while (length > (n * n)){
+        n ++;
+    };
+    return n;
 }
 
+//      cypher = cypher.split("");
 
 // UI logic
 $(document).ready(function() {
   $("form#encrypt").submit(function(event) {
     event.preventDefault();
-    cypher = $("input#encrypt").val().toLowerCase();
+    var cypher = $("input#encrypt").val().toLowerCase();
+    var output = cryptofunction(cypher);
 
 
     $("#result").show();
-    $("#output").text(cypher);
+    $("#output").text(output);
+    //hides result with click
     $("#encrypt").click(function(){
         $("#result").fadeOut("slow");
       });
 });
 });
-//
-// var one = firstLetter
-// var two = secondLetter
-// var three = thirdLetter
-// var four = forthLetter
-// var five = fifthLetter
-// var six = sixthLetter
-// var seven = seventhLetter
-// var eight = eighthLetter
-// var nine = ninthLetter
